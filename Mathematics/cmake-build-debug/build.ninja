@@ -67,6 +67,12 @@ build CMakeFiles/Mathematics.dir/DualLagrange/ExecuteDualLagrange.cpp.o: CXX_COM
   OBJECT_DIR = CMakeFiles/Mathematics.dir
   OBJECT_FILE_DIR = CMakeFiles/Mathematics.dir/DualLagrange
 
+build CMakeFiles/Mathematics.dir/SummingTheNSeries/SummingNSeries.cpp.o: CXX_COMPILER__Mathematics_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/SummingTheNSeries/SummingNSeries.cpp || cmake_object_order_depends_target_Mathematics
+  DEP_FILE = CMakeFiles/Mathematics.dir/SummingTheNSeries/SummingNSeries.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Mathematics.dir
+  OBJECT_FILE_DIR = CMakeFiles/Mathematics.dir/SummingTheNSeries
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Mathematics
@@ -75,7 +81,7 @@ build CMakeFiles/Mathematics.dir/DualLagrange/ExecuteDualLagrange.cpp.o: CXX_COM
 #############################################
 # Link the executable Mathematics
 
-build Mathematics: CXX_EXECUTABLE_LINKER__Mathematics_Debug CMakeFiles/Mathematics.dir/main.cpp.o CMakeFiles/Mathematics.dir/FindThePoint/FindDistancePoint.cpp.o CMakeFiles/Mathematics.dir/DualLagrange/ExecuteDualLagrange.cpp.o
+build Mathematics: CXX_EXECUTABLE_LINKER__Mathematics_Debug CMakeFiles/Mathematics.dir/main.cpp.o CMakeFiles/Mathematics.dir/FindThePoint/FindDistancePoint.cpp.o CMakeFiles/Mathematics.dir/DualLagrange/ExecuteDualLagrange.cpp.o CMakeFiles/Mathematics.dir/SummingTheNSeries/SummingNSeries.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6
   OBJECT_DIR = CMakeFiles/Mathematics.dir
   POST_BUILD = :

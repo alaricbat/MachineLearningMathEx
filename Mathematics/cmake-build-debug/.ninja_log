@@ -1,4 +1,8 @@
 # ninja log v5
 719	762	1782964304955916807	Mathematics	63f301a70a922f05
 8	702	1782971393358062070	CMakeFiles/Mathematics.dir/main.cpp.o	381dd6a702af7c63
-0	64	1783047463961968861	build.ninja	a63624a332c0a04
+0	64	1783177921486249492	build.ninja	a63624a332c0a04
+3	838	1783178495542965302	CMakeFiles/Mathematics.dir/main.cpp.o	5aa20816a5ba7c7a
+4	845	1783178495549915638	CMakeFiles/Mathematics.dir/SummingTheNSeries/SummingNSeries.cpp.o	daec5d4433d0b3e9
+3	846	1783178495549974180	CMakeFiles/Mathematics.dir/FindThePoint/FindDistancePoint.cpp.o	9a7cf92d73379f66
+4	848	1783178495554533849	CMakeFiles/Mathematics.dir/DualLagrange/ExecuteDualLagrange.cpp.o	703857eb13c3b23e
