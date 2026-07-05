@@ -52,7 +52,8 @@
 				0,
 				1,
 				2,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -88,7 +89,8 @@
 				0,
 				1,
 				2,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -103,19 +105,25 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "FindThePoint/FindDistancePoint.cpp",
+			"path" : "Basic/FindThePoint/FindDistancePoint.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "DualLagrange/ExecuteDualLagrange.cpp",
+			"path" : "MachineLearning/DualLagrange/ExecuteDualLagrange.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "SummingTheNSeries/SummingNSeries.cpp",
+			"path" : "Basic/SummingTheNSeries/SummingNSeries.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Basic/MovingTiles/MovingTileMath.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
