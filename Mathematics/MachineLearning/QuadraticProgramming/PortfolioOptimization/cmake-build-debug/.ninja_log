@@ -1,0 +1,4 @@
+# ninja log v5
+0	516	1785163059512082838	CMakeFiles/PortfolioOptimization.dir/src/main.cpp.o	44ed8454c16fa4df
+1	647	1785163059644614488	CMakeFiles/PortfolioOptimization.dir/src/CsvReader.cpp.o	860f91ea7a62457c
+647	692	1785163059693084052	PortfolioOptimization	ac7993f51f0f1fc2

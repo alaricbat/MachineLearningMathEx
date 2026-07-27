@@ -79,6 +79,24 @@ build CMakeFiles/Mathematics.dir/Basic/MovingTiles/MovingTileMath.cpp.o: CXX_COM
   OBJECT_DIR = CMakeFiles/Mathematics.dir
   OBJECT_FILE_DIR = CMakeFiles/Mathematics.dir/Basic/MovingTiles
 
+build CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/QuadraticProgramming.cpp.o: CXX_COMPILER__Mathematics_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/QuadraticProgramming.cpp || cmake_object_order_depends_target_Mathematics
+  DEP_FILE = CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/QuadraticProgramming.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Mathematics.dir
+  OBJECT_FILE_DIR = CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming
+
+build CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/main.cpp.o: CXX_COMPILER__Mathematics_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/main.cpp || cmake_object_order_depends_target_Mathematics
+  DEP_FILE = CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/main.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Mathematics.dir
+  OBJECT_FILE_DIR = CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/PortfolioOptimization/src
+
+build CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/CsvReader.cpp.o: CXX_COMPILER__Mathematics_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/CsvReader.cpp || cmake_object_order_depends_target_Mathematics
+  DEP_FILE = CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/CsvReader.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Mathematics.dir
+  OBJECT_FILE_DIR = CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/PortfolioOptimization/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Mathematics
@@ -87,7 +105,7 @@ build CMakeFiles/Mathematics.dir/Basic/MovingTiles/MovingTileMath.cpp.o: CXX_COM
 #############################################
 # Link the executable Mathematics
 
-build Mathematics: CXX_EXECUTABLE_LINKER__Mathematics_Debug CMakeFiles/Mathematics.dir/main.cpp.o CMakeFiles/Mathematics.dir/Basic/FindThePoint/FindDistancePoint.cpp.o CMakeFiles/Mathematics.dir/MachineLearning/DualLagrange/ExecuteDualLagrange.cpp.o CMakeFiles/Mathematics.dir/Basic/SummingTheNSeries/SummingNSeries.cpp.o CMakeFiles/Mathematics.dir/Basic/MovingTiles/MovingTileMath.cpp.o
+build Mathematics: CXX_EXECUTABLE_LINKER__Mathematics_Debug CMakeFiles/Mathematics.dir/main.cpp.o CMakeFiles/Mathematics.dir/Basic/FindThePoint/FindDistancePoint.cpp.o CMakeFiles/Mathematics.dir/MachineLearning/DualLagrange/ExecuteDualLagrange.cpp.o CMakeFiles/Mathematics.dir/Basic/SummingTheNSeries/SummingNSeries.cpp.o CMakeFiles/Mathematics.dir/Basic/MovingTiles/MovingTileMath.cpp.o CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/QuadraticProgramming.cpp.o CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/main.cpp.o CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/CsvReader.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6
   OBJECT_DIR = CMakeFiles/Mathematics.dir
   POST_BUILD = :

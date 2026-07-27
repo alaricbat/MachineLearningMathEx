@@ -1,7 +1,14 @@
 # ninja log v5
 719	762	1782964304955916807	Mathematics	63f301a70a922f05
 3	838	1783178495542965302	CMakeFiles/Mathematics.dir/main.cpp.o	5aa20816a5ba7c7a
+0	64	1785163014746717031	build.ninja	a63624a332c0a04
+3	35	1785158680732498316	CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/QuadraticProgramming.cpp.o	631f317a440adc86
 4	845	1783178495549915638	CMakeFiles/Mathematics.dir/SummingTheNSeries/SummingNSeries.cpp.o	daec5d4433d0b3e9
-0	64	1783238609975393043	build.ninja	a63624a332c0a04
-3	846	1783178495549974180	CMakeFiles/Mathematics.dir/FindThePoint/FindDistancePoint.cpp.o	9a7cf92d73379f66
 4	848	1783178495554533849	CMakeFiles/Mathematics.dir/DualLagrange/ExecuteDualLagrange.cpp.o	703857eb13c3b23e
+3	846	1783178495549974180	CMakeFiles/Mathematics.dir/FindThePoint/FindDistancePoint.cpp.o	9a7cf92d73379f66
+35	1035	1785158681729658803	CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/CsvReader.cpp.o	215b66b38791581c
+4	899	1785158681591228637	CMakeFiles/Mathematics.dir/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/main.cpp.o	2b054307de25c35f
+3	836	1785158681525722199	CMakeFiles/Mathematics.dir/MachineLearning/DualLagrange/ExecuteDualLagrange.cpp.o	1c2e4cc53dab6d48
+3	839	1785158681529473197	CMakeFiles/Mathematics.dir/Basic/FindThePoint/FindDistancePoint.cpp.o	a83b647a396894cb
+3	857	1785158681547475775	CMakeFiles/Mathematics.dir/Basic/SummingTheNSeries/SummingNSeries.cpp.o	d1e3b856dbdc34cd
+3	967	1785158681660437532	CMakeFiles/Mathematics.dir/Basic/MovingTiles/MovingTileMath.cpp.o	1a0471e8c8597ede
