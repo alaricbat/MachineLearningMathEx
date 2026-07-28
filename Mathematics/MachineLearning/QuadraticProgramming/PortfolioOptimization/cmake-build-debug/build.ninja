@@ -63,6 +63,20 @@ build CMakeFiles/PortfolioOptimization.dir/src/CsvReader.cpp.o: CXX_COMPILER__Po
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
 
+build CMakeFiles/PortfolioOptimization.dir/src/ReturnCalculator.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/ReturnCalculator.cpp || cmake_object_order_depends_target_PortfolioOptimization
+  DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/ReturnCalculator.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
+  OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
+  OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
+
+build CMakeFiles/PortfolioOptimization.dir/src/StockRepository.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/StockRepository.cpp || cmake_object_order_depends_target_PortfolioOptimization
+  DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/StockRepository.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
+  OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
+  OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target PortfolioOptimization
@@ -71,7 +85,7 @@ build CMakeFiles/PortfolioOptimization.dir/src/CsvReader.cpp.o: CXX_COMPILER__Po
 #############################################
 # Link the executable PortfolioOptimization
 
-build PortfolioOptimization: CXX_EXECUTABLE_LINKER__PortfolioOptimization_Debug CMakeFiles/PortfolioOptimization.dir/src/main.cpp.o CMakeFiles/PortfolioOptimization.dir/src/CsvReader.cpp.o
+build PortfolioOptimization: CXX_EXECUTABLE_LINKER__PortfolioOptimization_Debug CMakeFiles/PortfolioOptimization.dir/src/main.cpp.o CMakeFiles/PortfolioOptimization.dir/src/CsvReader.cpp.o CMakeFiles/PortfolioOptimization.dir/src/ReturnCalculator.cpp.o CMakeFiles/PortfolioOptimization.dir/src/StockRepository.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   POST_BUILD = :

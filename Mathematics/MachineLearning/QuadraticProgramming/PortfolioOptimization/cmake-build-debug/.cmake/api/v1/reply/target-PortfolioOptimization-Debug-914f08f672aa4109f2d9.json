@@ -64,7 +64,9 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2,
+				11
 			]
 		}
 	],
@@ -98,20 +100,23 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2,
+				11
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				2,
 				3,
 				4,
 				5,
 				6,
 				7,
-				8
+				8,
+				9,
+				10
 			]
 		}
 	],
@@ -127,6 +132,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/CsvReader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/ReturnCalculator.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -163,6 +174,17 @@
 			"backtrace" : 1,
 			"path" : "include/PortfolioOptimizer.h",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/StockRepository.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/StockRepository.cpp",
+			"sourceGroupIndex" : 0
 		}
 	],
 	"type" : "EXECUTABLE"

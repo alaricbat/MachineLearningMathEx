@@ -17,4 +17,7 @@ add_executable(PortfolioOptimization
         include/CovarianceMatrix.h
         include/Portfolio.h
         include/PortfolioOptimizer.h
+        src/ReturnCalculator.cpp
+        include/StockRepository.h
+        src/StockRepository.cpp
 )
