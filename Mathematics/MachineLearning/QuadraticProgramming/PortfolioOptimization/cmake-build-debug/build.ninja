@@ -77,6 +77,41 @@ build CMakeFiles/PortfolioOptimization.dir/src/StockRepository.cpp.o: CXX_COMPIL
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
 
+build CMakeFiles/PortfolioOptimization.dir/src/Statistics.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/Statistics.cpp || cmake_object_order_depends_target_PortfolioOptimization
+  DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/Statistics.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
+  OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
+  OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
+
+build CMakeFiles/PortfolioOptimization.dir/src/CovarianceMatrix.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/CovarianceMatrix.cpp || cmake_object_order_depends_target_PortfolioOptimization
+  DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/CovarianceMatrix.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
+  OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
+  OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
+
+build CMakeFiles/PortfolioOptimization.dir/src/PortfolioOptimizer.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/PortfolioOptimizer.cpp || cmake_object_order_depends_target_PortfolioOptimization
+  DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/PortfolioOptimizer.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
+  OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
+  OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
+
+build CMakeFiles/PortfolioOptimization.dir/src/LinearSolver.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/LinearSolver.cpp || cmake_object_order_depends_target_PortfolioOptimization
+  DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/LinearSolver.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
+  OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
+  OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
+
+build CMakeFiles/PortfolioOptimization.dir/src/KKTSolver.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/KKTSolver.cpp || cmake_object_order_depends_target_PortfolioOptimization
+  DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/KKTSolver.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
+  OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
+  OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target PortfolioOptimization
@@ -85,7 +120,7 @@ build CMakeFiles/PortfolioOptimization.dir/src/StockRepository.cpp.o: CXX_COMPIL
 #############################################
 # Link the executable PortfolioOptimization
 
-build PortfolioOptimization: CXX_EXECUTABLE_LINKER__PortfolioOptimization_Debug CMakeFiles/PortfolioOptimization.dir/src/main.cpp.o CMakeFiles/PortfolioOptimization.dir/src/CsvReader.cpp.o CMakeFiles/PortfolioOptimization.dir/src/ReturnCalculator.cpp.o CMakeFiles/PortfolioOptimization.dir/src/StockRepository.cpp.o
+build PortfolioOptimization: CXX_EXECUTABLE_LINKER__PortfolioOptimization_Debug CMakeFiles/PortfolioOptimization.dir/src/main.cpp.o CMakeFiles/PortfolioOptimization.dir/src/CsvReader.cpp.o CMakeFiles/PortfolioOptimization.dir/src/ReturnCalculator.cpp.o CMakeFiles/PortfolioOptimization.dir/src/StockRepository.cpp.o CMakeFiles/PortfolioOptimization.dir/src/Statistics.cpp.o CMakeFiles/PortfolioOptimization.dir/src/CovarianceMatrix.cpp.o CMakeFiles/PortfolioOptimization.dir/src/PortfolioOptimizer.cpp.o CMakeFiles/PortfolioOptimization.dir/src/LinearSolver.cpp.o CMakeFiles/PortfolioOptimization.dir/src/KKTSolver.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   POST_BUILD = :

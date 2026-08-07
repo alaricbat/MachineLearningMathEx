@@ -34,6 +34,8 @@ class ReturnCalculator {
      */
      std::map<std::string, std::vector<double>> calculate(const std::vector<StockData>& stocks);
 
+     std::vector<double> calculateExpectedReturn(std::map<std::string, std::vector<double>> stocks);
+
     private:
     /**
      * @brief Calculate the return between two consecutive prices.

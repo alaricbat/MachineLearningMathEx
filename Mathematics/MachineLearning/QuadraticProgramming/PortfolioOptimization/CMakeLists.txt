@@ -20,4 +20,12 @@ add_executable(PortfolioOptimization
         src/ReturnCalculator.cpp
         include/StockRepository.h
         src/StockRepository.cpp
+        src/Statistics.cpp
+        src/Statistics.cpp
+        src/CovarianceMatrix.cpp
+        src/PortfolioOptimizer.cpp
+        include/LinearSolver.h
+        include/KKTSolver.h
+        src/LinearSolver.cpp
+        src/KKTSolver.cpp
 )

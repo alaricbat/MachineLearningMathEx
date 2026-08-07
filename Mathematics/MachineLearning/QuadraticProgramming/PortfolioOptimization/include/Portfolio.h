@@ -8,5 +8,5 @@ class Portfolio {
         std::vector<std::string> tickers;
         std::vector<double> weights;
         double expectedReturn;
-        double risk;
+        double expectedRisk;
 };

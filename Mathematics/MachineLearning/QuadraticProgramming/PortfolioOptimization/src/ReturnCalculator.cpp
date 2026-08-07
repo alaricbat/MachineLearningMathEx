@@ -1,5 +1,6 @@
 #include "../include/ReturnCalculator.h"
 #include "../include/StockRepository.h"
+#include "../include/Statistics.h"
 
 #include <map>
 #include <vector>
@@ -18,6 +19,16 @@ std::map<std::string, std::vector<double>> ReturnCalculator::calculate(
         }
     }
     return result;
+}
+
+std::vector<double> ReturnCalculator::calculateExpectedReturn(std::map<std::string, std::vector<double>> stocks) {
+    Statistics statistics;
+    std::vector<double> expectedReturns;
+    for (const auto& stock: stocks) {
+        double mean = statistics.mean(stock.second);
+        expectedReturns.push_back(mean);
+    }
+    return expectedReturns;
 }
 
 
