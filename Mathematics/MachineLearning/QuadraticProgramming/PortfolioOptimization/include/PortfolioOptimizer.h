@@ -1,11 +1,12 @@
 #pragma once
 
 #include "Portfolio.h"
+#include "map"
 
 class PortfolioOptimizer {
 public:
     Portfolio optimize(
-            const std::vector<double>& expectedReturns,
+            const std::map<std::string, std::vector<double>>& stocks,
             const std::vector<std::vector<double>>& covarianceMatrix);
 
 private:

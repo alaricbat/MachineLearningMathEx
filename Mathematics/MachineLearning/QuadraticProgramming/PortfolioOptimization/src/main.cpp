@@ -7,7 +7,6 @@
 #include "../include/CsvReader.h"
 #include "../include/ReturnCalculator.h"
 #include "../include/CovarianceMatrix.h"
-#include "../include/LinearSolver.h"
 #include "../include/PortfolioOptimizer.h"
 
 int main() {
@@ -15,7 +14,6 @@ int main() {
     CsvReader reader;
     ReturnCalculator calculator;
     CovarianceMatrix coMatrix;
-    LinearSolver linearSolver;
     PortfolioOptimizer portfolioOptimizer;
 
     std::vector<StockData> stocks = reader.load("../data/stocks.csv");
@@ -30,11 +28,22 @@ int main() {
 
     std::vector<std::vector<double>> matrix = coMatrix.calculate(calResult);
 
-    Portfolio pofolio =
-            portfolioOptimizer.optimize(calculator.calculateExpectedReturn(calResult), matrix);
+    Portfolio portfolio =
+            portfolioOptimizer.optimize(calResult, matrix);
+    std::cout << "\n===== Optimal Portfolio =====\n";
 
-    std::cout << "Risk : " << pofolio.expectedRisk << std::endl;
-    std::cout << "Return : " << pofolio.expectedReturn << std::endl;
+    for (size_t i = 0; i < portfolio.weights.size(); ++i)
+    {
+        std::cout
+                << portfolio.tickers[i]
+                << " : "
+                << portfolio.weights[i] * 100
+                << "%\n";
+    }
+    std::cout << "Risk : " << portfolio.expectedRisk << std::endl;
+    std::cout << "Return : " << portfolio.expectedReturn << std::endl;
+
+
 
     return 0;
 }

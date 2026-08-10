@@ -18,3 +18,6 @@
 1358	1543	1786100743638601297	PortfolioOptimization	e63ee688dcf4e849
 2	624	1786100797369804881	CMakeFiles/PortfolioOptimization.dir/src/main.cpp.o	44ed8454c16fa4df
 625	667	1786100797414646087	PortfolioOptimization	e63ee688dcf4e849
+3	558	1786358858538160462	CMakeFiles/PortfolioOptimization.dir/src/main.cpp.o	44ed8454c16fa4df
+4	568	1786358858550662566	CMakeFiles/PortfolioOptimization.dir/src/PortfolioOptimizer.cpp.o	6ef23c8beba9124
+568	690	1786358858672026494	PortfolioOptimization	e63ee688dcf4e849

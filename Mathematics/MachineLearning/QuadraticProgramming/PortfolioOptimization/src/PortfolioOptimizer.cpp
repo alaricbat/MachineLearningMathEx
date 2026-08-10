@@ -1,17 +1,26 @@
 #include "../include/PortfolioOptimizer.h"
 #include "../include/KKTSolver.h"
+#include "../include/ReturnCalculator.h"
 
 #include "numeric"
 #include <algorithm>
 
 Portfolio PortfolioOptimizer::optimize(
-        const std::vector<double>& expectedReturns,
+        const std::map<std::string, std::vector<double>>& stocks,
         const std::vector<std::vector<double>>& covarianceMatrix) {
     Portfolio portfolio;
+    ReturnCalculator calculator;
     portfolio.weights = solveQuadraticProgram(covarianceMatrix);
     if (!isFeasible(portfolio.weights)) {
         throw std::runtime_error("Portfolio optimization failed.");
     }
+    std::vector<std::string> tickers;
+    tickers.reserve(stocks.size());
+    for (const auto& stock: stocks) {
+        tickers.push_back(stock.first);
+    }
+    portfolio.tickers = tickers;
+    std::vector<double> expectedReturns = calculator.calculateExpectedReturn(stocks);
     portfolio.expectedReturn = portfolioReturn(
             portfolio.weights,
             expectedReturns);
