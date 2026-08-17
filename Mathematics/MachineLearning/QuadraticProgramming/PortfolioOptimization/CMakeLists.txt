@@ -28,4 +28,8 @@ add_executable(PortfolioOptimization
         include/KKTSolver.h
         src/LinearSolver.cpp
         src/KKTSolver.cpp
+        include/ActiveSetSolver.h
+        src/ActiveSetSolver.cpp
+        include/MatrixSolver.h
+        src/MatrixSolver.cpp
 )
