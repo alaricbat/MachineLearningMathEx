@@ -37,7 +37,7 @@ Portfolio PortfolioOptimizer::optimize(const std::vector<StockData>& stocks) {
 
     //Initial the vector of weights
     //Important step !
-    std::vector<double> weight(covarianceMatrix.size(), 1.0);
+    std::vector<double> weight(covarianceMatrix.size(), 1.0 / static_cast<double>(covarianceMatrix.size()));
 
     portfolio.weights = solveQuadraticProgram(
             covarianceMatrix,

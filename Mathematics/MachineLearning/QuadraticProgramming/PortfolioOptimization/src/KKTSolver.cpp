@@ -19,9 +19,6 @@ std::vector<double> KKTSolver::solve(
 
     auto solution = solver.solve(kktMatrix, rhs);
 
-    // Remove λ
-    solution.pop_back();
-
     return solution;
 }
 

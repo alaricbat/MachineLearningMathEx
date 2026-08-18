@@ -1,6 +1,8 @@
 #include "../include/ActiveSetSolver.h"
 #include "../include/KKTSolver.h"
 
+#include <iostream>
+
 #include <algorithm>
 #include <vector>
 
@@ -27,14 +29,17 @@ std::vector<double> ActiveSetSolver::solveWithActiveSet(
             const std::vector<double>& cVector) {
     KKTSolver solver;
 
+    int kk = 0;
+
     const size_t n = covarianceMatrix.size();
 
     if (n == 0) return {};
     if (xVector.empty()) return {};
 
     // Initial working set
+    workingSet.clear();
     workingSet.push_back(0);
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n - 1; i++) {
         workingSet.push_back(i + 1);
     }
 
@@ -99,13 +104,9 @@ std::vector<double> ActiveSetSolver::solveWithActiveSet(
             double alpha_k = 1.0;
             int constraint_num = -1;
             for (size_t i = 1; i < bVector.size(); ++i) {
-                bool isBelongWorkingSet = false;
-                for (int workingIdx : workingSet) {
-                    if (i == workingIdx) {
-                        isBelongWorkingSet = true;
-                        break;
-                    }
-                }
+                bool isBelongWorkingSet = (std::find(workingSet.begin(),
+                                                     workingSet.end(),
+                                                     static_cast<int>(i)) != workingSet.end());
                 if (isBelongWorkingSet) continue;
                 const std::vector<double>& a_i = activeMatrix[i];
                 const double b_i = bVector[i];
@@ -113,21 +114,22 @@ std::vector<double> ActiveSetSolver::solveWithActiveSet(
                 for (size_t j = 0; j < a_i.size(); j++) {
                     denominator += a_i[j] * dk[j];
                 }
-                double margin = 0.0;
                 if (denominator > 1e-6) {
+                    double current_val = 0.0;
                     for (size_t j = 0; j < a_i.size(); j++) {
-                        margin += a_i[j] * xVector[j];
+                        current_val += a_i[j] * xVector[j];
                     }
-                    margin = b_i - margin;
+                    double margin = b_i - current_val;
+                    double val = margin / denominator;
+                    if (val >= 0.0 && val < alpha_k) {
+                        alpha_k = val;
+                        constraint_num = static_cast<int>(i);
+                    }
                 }
-                double val = margin / denominator;
-                if (val < alpha_k) {
-                    alpha_k = val;
-                    constraint_num = static_cast<int>(i);
-                }
-                if (alpha_k < 1.0 && constraint_num != -1) {
+            }
+
+            if (alpha_k < 1.0 && constraint_num != -1) {
                     workingSet.push_back(constraint_num);
-                }
             }
 
             for (size_t j = 0; j < xVector.size(); ++j) {
@@ -136,6 +138,7 @@ std::vector<double> ActiveSetSolver::solveWithActiveSet(
         }
 
         // Reserve memory upfront to avoid slow dynamic reallocations
+        activeMatrix_k.clear();
         activeMatrix_k.reserve(workingSet.size());
 
         for (int activeIdx : workingSet) {
@@ -144,6 +147,9 @@ std::vector<double> ActiveSetSolver::solveWithActiveSet(
                 activeMatrix_k.push_back(activeMatrix[activeIdx]);
             }
         }
+
+        kk+=1;
+        std::cout << "k = " << kk << std::endl;
 
         kktResult = solver.solve(
                 covarianceMatrix,
@@ -177,5 +183,5 @@ bool ActiveSetSolver::isContinue(const std::vector<double>& dk, const std::vecto
             break;
         }
     }
-    return isLambdaAllPositive || isAllZero;
+    return (!isAllZero) || (!isLambdaAllPositive);
 }
