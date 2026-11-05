@@ -32,4 +32,9 @@ add_executable(PortfolioOptimization
         src/ActiveSetSolver.cpp
         include/MatrixSolver.h
         src/MatrixSolver.cpp
+        ../../DualLagrange/ExecuteDualLagrange.cpp
+        ../../../LLM/TransformerEncoderSim/src/PretrainedNLPModel.cpp
+        ../../../LLM/TransformerEncoderSim/main.cpp
+        ../../../LLM/TransformerEncoderSim/src/TransformerEncoder.cpp
+        ../../../LLM/TransformerEncoderSim/src/TextClassifier.cpp
 )

@@ -9,7 +9,6 @@ add_executable(Mathematics main.cpp
         MachineLearning/DualLagrange/ExecuteDualLagrange.cpp
         Basic/SummingTheNSeries/SummingNSeries.cpp
         Basic/MovingTiles/MovingTileMath.cpp
-        MachineLearning/QuadraticProgramming/QuadraticProgramming.cpp
         MachineLearning/QuadraticProgramming/PortfolioOptimization/include/StockData.h
         MachineLearning/QuadraticProgramming/PortfolioOptimization/include/StockData.h
         MachineLearning/QuadraticProgramming/PortfolioOptimization/include/CsvReader.h
