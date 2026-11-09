@@ -51,80 +51,115 @@ build cmake_object_order_depends_target_PortfolioOptimization: phony || CMakeFil
 
 build CMakeFiles/PortfolioOptimization.dir/src/main.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/main.cpp || cmake_object_order_depends_target_PortfolioOptimization
   DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/main.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
   INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
 
 build CMakeFiles/PortfolioOptimization.dir/src/CsvReader.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/CsvReader.cpp || cmake_object_order_depends_target_PortfolioOptimization
   DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/CsvReader.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
   INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
 
 build CMakeFiles/PortfolioOptimization.dir/src/ReturnCalculator.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/ReturnCalculator.cpp || cmake_object_order_depends_target_PortfolioOptimization
   DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/ReturnCalculator.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
   INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
 
 build CMakeFiles/PortfolioOptimization.dir/src/StockRepository.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/StockRepository.cpp || cmake_object_order_depends_target_PortfolioOptimization
   DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/StockRepository.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
   INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
 
 build CMakeFiles/PortfolioOptimization.dir/src/Statistics.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/Statistics.cpp || cmake_object_order_depends_target_PortfolioOptimization
   DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/Statistics.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
   INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
 
 build CMakeFiles/PortfolioOptimization.dir/src/CovarianceMatrix.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/CovarianceMatrix.cpp || cmake_object_order_depends_target_PortfolioOptimization
   DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/CovarianceMatrix.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
   INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
 
 build CMakeFiles/PortfolioOptimization.dir/src/PortfolioOptimizer.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/PortfolioOptimizer.cpp || cmake_object_order_depends_target_PortfolioOptimization
   DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/PortfolioOptimizer.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
   INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
 
 build CMakeFiles/PortfolioOptimization.dir/src/LinearSolver.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/LinearSolver.cpp || cmake_object_order_depends_target_PortfolioOptimization
   DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/LinearSolver.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
   INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
 
 build CMakeFiles/PortfolioOptimization.dir/src/KKTSolver.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/KKTSolver.cpp || cmake_object_order_depends_target_PortfolioOptimization
   DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/KKTSolver.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
   INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
 
 build CMakeFiles/PortfolioOptimization.dir/src/ActiveSetSolver.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/ActiveSetSolver.cpp || cmake_object_order_depends_target_PortfolioOptimization
   DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/ActiveSetSolver.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
   INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
 
 build CMakeFiles/PortfolioOptimization.dir/src/MatrixSolver.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/MatrixSolver.cpp || cmake_object_order_depends_target_PortfolioOptimization
   DEP_FILE = CMakeFiles/PortfolioOptimization.dir/src/MatrixSolver.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
   INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/src
+
+build CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/DualLagrange/ExecuteDualLagrange.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/DualLagrange/ExecuteDualLagrange.cpp || cmake_object_order_depends_target_PortfolioOptimization
+  DEP_FILE = CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/DualLagrange/ExecuteDualLagrange.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
+  INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
+  OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
+  OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/DualLagrange
+
+build CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src/PretrainedNLPModel.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src/PretrainedNLPModel.cpp || cmake_object_order_depends_target_PortfolioOptimization
+  DEP_FILE = CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src/PretrainedNLPModel.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
+  INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
+  OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
+  OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src
+
+build CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/main.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/main.cpp || cmake_object_order_depends_target_PortfolioOptimization
+  DEP_FILE = CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/main.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
+  INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
+  OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
+  OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim
+
+build CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src/TransformerEncoder.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src/TransformerEncoder.cpp || cmake_object_order_depends_target_PortfolioOptimization
+  DEP_FILE = CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src/TransformerEncoder.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
+  INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
+  OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
+  OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src
+
+build CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src/TextClassifier.cpp.o: CXX_COMPILER__PortfolioOptimization_unscanned_Debug /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src/TextClassifier.cpp || cmake_object_order_depends_target_PortfolioOptimization
+  DEP_FILE = CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src/TextClassifier.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fdiagnostics-color=always
+  INCLUDES = -I/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/include
+  OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
+  OBJECT_FILE_DIR = CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src
 
 
 # =============================================================================
@@ -134,7 +169,7 @@ build CMakeFiles/PortfolioOptimization.dir/src/MatrixSolver.cpp.o: CXX_COMPILER_
 #############################################
 # Link the executable PortfolioOptimization
 
-build PortfolioOptimization: CXX_EXECUTABLE_LINKER__PortfolioOptimization_Debug CMakeFiles/PortfolioOptimization.dir/src/main.cpp.o CMakeFiles/PortfolioOptimization.dir/src/CsvReader.cpp.o CMakeFiles/PortfolioOptimization.dir/src/ReturnCalculator.cpp.o CMakeFiles/PortfolioOptimization.dir/src/StockRepository.cpp.o CMakeFiles/PortfolioOptimization.dir/src/Statistics.cpp.o CMakeFiles/PortfolioOptimization.dir/src/CovarianceMatrix.cpp.o CMakeFiles/PortfolioOptimization.dir/src/PortfolioOptimizer.cpp.o CMakeFiles/PortfolioOptimization.dir/src/LinearSolver.cpp.o CMakeFiles/PortfolioOptimization.dir/src/KKTSolver.cpp.o CMakeFiles/PortfolioOptimization.dir/src/ActiveSetSolver.cpp.o CMakeFiles/PortfolioOptimization.dir/src/MatrixSolver.cpp.o
+build PortfolioOptimization: CXX_EXECUTABLE_LINKER__PortfolioOptimization_Debug CMakeFiles/PortfolioOptimization.dir/src/main.cpp.o CMakeFiles/PortfolioOptimization.dir/src/CsvReader.cpp.o CMakeFiles/PortfolioOptimization.dir/src/ReturnCalculator.cpp.o CMakeFiles/PortfolioOptimization.dir/src/StockRepository.cpp.o CMakeFiles/PortfolioOptimization.dir/src/Statistics.cpp.o CMakeFiles/PortfolioOptimization.dir/src/CovarianceMatrix.cpp.o CMakeFiles/PortfolioOptimization.dir/src/PortfolioOptimizer.cpp.o CMakeFiles/PortfolioOptimization.dir/src/LinearSolver.cpp.o CMakeFiles/PortfolioOptimization.dir/src/KKTSolver.cpp.o CMakeFiles/PortfolioOptimization.dir/src/ActiveSetSolver.cpp.o CMakeFiles/PortfolioOptimization.dir/src/MatrixSolver.cpp.o CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/DualLagrange/ExecuteDualLagrange.cpp.o CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src/PretrainedNLPModel.cpp.o CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/main.cpp.o CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src/TransformerEncoder.cpp.o CMakeFiles/PortfolioOptimization.dir/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/LLM/TransformerEncoderSim/src/TextClassifier.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6
   OBJECT_DIR = CMakeFiles/PortfolioOptimization.dir
   POST_BUILD = :
@@ -185,14 +220,14 @@ build all: phony PortfolioOptimization
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-GNU-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-GNU-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
 
 
 #############################################
