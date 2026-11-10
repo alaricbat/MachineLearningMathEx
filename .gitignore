@@ -1,4 +1,5 @@
 .idea
+.DS_Store
 cmake-build-debug
 Mathematics/.idea/
 Mathematics/cmake-build-debug
