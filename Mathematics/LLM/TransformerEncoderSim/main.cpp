@@ -12,8 +12,8 @@ int main() {
     std::vector<std::vector<double>> encoders = TransformerEncoder::encode(tokens);
     std::vector<std::vector<double>> a = {
             {1, 1, 1},
-            {1, 1,  1},
-            {1, 1,  1}
+            {1, 1, 1},
+            {1, 1, 1}
     };
     std::vector<std::vector<double>> b = {
             {2, 2},
@@ -21,15 +21,20 @@ int main() {
             {2, 2}
     };
 
-    std::vector<std::vector<double>> multiplier =  Matrix::dot(a, b);
+    std::vector<double> probs =  TextClassifier::predict(encoders);
 
-    for (const std::vector<double> &vectors : multiplier) {
-        std::cout << "[ ";
-        for (const double &number : vectors) {
-            std::cout << number << " ";
+    std::vector<std::string> labels = {"positive", "negative", "neutral"};
+    std::cout << "=== CLASSIFICATION RESULT ===\n";
+    size_t max_idx = 0;
+    for (size_t i = 0; i < probs.size(); ++i) {
+        std::cout << "  - Pr(" << std::left << std::setw(8) << labels[i] << ") = "
+                  << std::fixed << std::setprecision(4) << probs[i] << "\n";
+        if (probs[i] > probs[max_idx]) {
+            max_idx = i;
         }
-        std::cout << "]" << std::endl;
     }
+
+    std::cout << "\n=> (Predicted Label): " << labels[max_idx] << std::endl;
 
     return 0;
 }

@@ -38,4 +38,5 @@ add_executable(MachineLearningMathEx
         Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/Statistics.cpp
         Mathematics/MachineLearning/QuadraticProgramming/PortfolioOptimization/src/StockRepository.cpp
         Mathematics/main.cpp
-        Mathematics/LLM/TransformerEncoderSim/utils/Matrix.cpp)
+        Mathematics/LLM/TransformerEncoderSim/utils/Matrix.cpp
+        Mathematics/LLM/TransformerEncoderSim/utils/Constant.cpp)
