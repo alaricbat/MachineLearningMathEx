@@ -1,3 +1,0 @@
-/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/cmake-build-debug/CMakeFiles/Mathematics.dir
-/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/tanchutat/Documents/PersonalProgramming/MachineLearningMathEx/Mathematics/cmake-build-debug/CMakeFiles/rebuild_cache.dir
