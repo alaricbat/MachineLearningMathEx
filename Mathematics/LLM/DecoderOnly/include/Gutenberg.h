@@ -11,7 +11,6 @@ public:
     static std::vector<std::string> getDatasetText();
 
 private:
-    static std::string trim(const std::string& str);
     static std::string preprocess(const std::string& filename);
 
 };

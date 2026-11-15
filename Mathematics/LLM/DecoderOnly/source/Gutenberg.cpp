@@ -4,19 +4,8 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
-
-std::string Gutenberg::trim(const std::string& str) {
-
-    const std::string whitespace = " \t\n\r\f\v";
-
-    size_t first = str.find_first_not_of(whitespace);
-    if (first == std::string::npos) {
-        return "";
-    }
-
-    size_t last = str.find_last_not_of(whitespace);
-    return str.substr(first, (last - first + 1));
-}
+#include <experimental/string_view>
+#include <algorithm>
 
 std::string Gutenberg::preprocess(const std::string &filename) {
 
@@ -29,45 +18,33 @@ std::string Gutenberg::preprocess(const std::string &filename) {
     buffer << file.rdbuf();
     std::string text = buffer.str();
 
-    const std::string startMarker = "*** START OF THE PROJECT GUTENBERG EBOOK";
-    const std::string endMarker = "*** END OF THE PROJECT GUTENBERG EBOOK";
+    std::string clean_text;
+    clean_text.reserve(text.size());
 
-    size_t start = text.find(startMarker);
-    if (start != std::string::npos) {
-        size_t newlinePos = text.find('\n', start);
-        if (newlinePos != std::string::npos) {
-            start = newlinePos + 1;
+    std::experimental::string_view sv(text);
+    size_t pos = 0;
+
+    while (pos < sv.size()) {
+        size_t next_newline = sv.find('\n', pos);
+        std::experimental::string_view line = (next_newline == std::experimental::string_view::npos)
+                                ? sv.substr(pos)
+                                : sv.substr(pos, next_newline - pos + 1);
+
+        bool is_empty = std::all_of(line.begin(), line.end(), [](unsigned char ch) {
+            return std::isspace(ch);
+        });
+
+        if (!is_empty) {
+            clean_text.append(line.data(), line.size());
         }
-    } else {
-        start = 0;
-    }
 
-    size_t end = text.find(endMarker, start);
-    if (end == std::string::npos) {
-        end = text.length();
-    }
-
-    std::string mainContent = trim(text.substr(start, end - start));
-
-    std::istringstream lineStream(mainContent);
-    std::string line;
-    std::string result;
-
-    result.reserve(mainContent.size());
-
-    bool isFirstLine = true;
-    while (std::getline(lineStream, line)) {
-        std::string cleanedLine = trim(line);
-        if (!cleanedLine.empty()) {
-            if (!isFirstLine) {
-                result += '\n';
-            }
-            result += cleanedLine;
-            isFirstLine = false;
+        if (next_newline == std::experimental::string_view::npos) {
+            break;
         }
+        pos = next_newline + 1;
     }
 
-    return result;
+    return clean_text;
 }
 
 std::vector<std::string> Gutenberg::getDatasetText() {
