@@ -132,7 +132,7 @@ std::unordered_map<std::string, std::vector<std::string>> ByteLevelBPE::initiali
 }
 
 std::unordered_map<std::pair<std::string, std::string>, int, PairHash>
-ByteLevelBPE::computePairFreqs(const std::unordered_map<std::string, int> &freqs,
+        ByteLevelBPE::computePairFreqs(const std::unordered_map<std::string, int> &freqs,
                                const std::unordered_map<std::string, std::vector<std::string>> &splits) {
     std::unordered_map<std::pair<std::string, std::string>, int, PairHash> pair_freqs;
 
@@ -152,6 +152,22 @@ ByteLevelBPE::computePairFreqs(const std::unordered_map<std::string, int> &freqs
     }
 
     return pair_freqs;
+}
+
+std::pair<std::string, std::string>
+        ByteLevelBPE::findBestPair(const std::unordered_map<std::pair<std::string, std::string>, int, PairHash> &pair_freqs) {
+
+    int max_freq = 0;
+    std::pair<std::string, std::string> best_pair;
+    for (const auto &pair_freq :pair_freqs) {
+        if (max_freq < pair_freq.second) {
+            max_freq = pair_freq.second;
+            best_pair = pair_freq.first;
+        }
+    }
+
+    return best_pair;
+
 }
 
 u_int32_t ByteLevelBPE::getUnicodeCodePoint(const std::string &str, size_t pos, size_t len) {

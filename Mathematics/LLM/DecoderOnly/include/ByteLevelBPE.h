@@ -31,6 +31,7 @@ public:
     static std::unordered_map<std::pair<std::string, std::string>, int, PairHash> computePairFreqs(
             const std::unordered_map<std::string, int> &freqs,
             const std::unordered_map<std::string, std::vector<std::string>> &splits);
+    static std::pair<std::string, std::string> findBestPair(const std::unordered_map<std::pair<std::string, std::string>, int, PairHash> &pair_freqs);
 
 private:
 
