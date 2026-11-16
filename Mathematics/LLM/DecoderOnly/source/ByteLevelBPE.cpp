@@ -1,8 +1,9 @@
 #include "../include/ByteLevelBPE.h"
 
 #include <sstream>
+#include <iomanip>
 
-std::vector<std::string> ByteLevelBPE::split(std::string &dataset) {
+std::vector<std::string> ByteLevelBPE::split(const std::string &dataset) {
 
     std::vector<std::string> arr;
     std::string current;
@@ -13,7 +14,6 @@ std::vector<std::string> ByteLevelBPE::split(std::string &dataset) {
         }
         current.clear();
     };
-
 
     size_t i = 0;
     while (i < dataset.size()) {
@@ -75,13 +75,83 @@ std::vector<std::string> ByteLevelBPE::split(std::string &dataset) {
     }
 
     flush();
-
-    for (const std::string &content : arr) {
-        std::cout << content << std::endl;
-    }
-
     return arr;
 
+}
+
+std::unordered_map<std::string, int> ByteLevelBPE::computeWordFreqs(const std::vector<std::string> &words) {
+
+    std::unordered_map<std::string, int> freqs;
+
+    for (const auto &tmp : words) {
+        auto it = freqs.find(tmp);
+        if (it != freqs.end()) {
+            continue;
+        }
+
+        for (const auto &word : words) {
+            if (tmp == word) {
+                freqs[tmp]++;
+            }
+        }
+
+    }
+
+    return freqs;
+}
+
+std::unordered_map<std::string, std::vector<std::string>> ByteLevelBPE::initializeSplits(const std::unordered_map<std::string, int> &freqs) {
+
+    std::unordered_map<std::string, std::vector<std::string>> splits;
+
+    for (const auto &freq : freqs) {
+
+        std::string word = freq.first;
+
+        std::vector<std::string> token;
+
+        bool is_tag = (word.size() > 3) && (
+                (word.front() == '[' && word.back() == ']') ||
+                        (word.front() == '<' && word.back() == '>'));
+
+        if (is_tag) {
+            token.push_back(word);
+        } else {
+            for (char & c : word) {
+                std::string single_byte(1, c);
+                token.push_back(single_byte);
+            }
+        }
+
+        splits[word] = std::move(token);
+
+    }
+
+    return splits;
+
+}
+
+std::unordered_map<std::pair<std::string, std::string>, int, PairHash>
+ByteLevelBPE::computePairFreqs(const std::unordered_map<std::string, int> &freqs,
+                               const std::unordered_map<std::string, std::vector<std::string>> &splits) {
+    std::unordered_map<std::pair<std::string, std::string>, int, PairHash> pair_freqs;
+
+    for (const auto &entry : freqs) {
+        const std::string &word = entry.first;
+        int word_count = entry.second;
+
+        const auto &tokens = splits.at(word);
+        if (tokens.size() < 2) {
+            continue;
+        }
+
+        for (size_t i =0; i < tokens.size() - 1; ++i) {
+            pair_freqs[{tokens[i], tokens[i + 1]}] += word_count;
+        }
+
+    }
+
+    return pair_freqs;
 }
 
 u_int32_t ByteLevelBPE::getUnicodeCodePoint(const std::string &str, size_t pos, size_t len) {
