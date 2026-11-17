@@ -2,6 +2,7 @@
 
 #include <sstream>
 #include <iomanip>
+#include <unordered_set>
 
 std::vector<std::string> ByteLevelBPE::split(const std::string &dataset) {
 
@@ -83,21 +84,12 @@ std::unordered_map<std::string, int> ByteLevelBPE::computeWordFreqs(const std::v
 
     std::unordered_map<std::string, int> freqs;
 
-    for (const auto &tmp : words) {
-        auto it = freqs.find(tmp);
-        if (it != freqs.end()) {
-            continue;
-        }
-
-        for (const auto &word : words) {
-            if (tmp == word) {
-                freqs[tmp]++;
-            }
-        }
-
+    for (const auto &word : words) {
+        freqs[word]++;
     }
 
     return freqs;
+
 }
 
 std::unordered_map<std::string, std::vector<std::string>> ByteLevelBPE::initializeSplits(const std::unordered_map<std::string, int> &freqs) {
@@ -152,6 +144,7 @@ std::unordered_map<std::pair<std::string, std::string>, int, PairHash>
     }
 
     return pair_freqs;
+
 }
 
 std::pair<std::string, std::string>
@@ -168,6 +161,72 @@ std::pair<std::string, std::string>
 
     return best_pair;
 
+}
+
+std::string ByteLevelBPE::mergeBestPair(const std::pair<std::string, std::string> &best_pair) {
+    return best_pair.first + best_pair.second;
+}
+
+std::vector<std::string> ByteLevelBPE::train(const std::vector<std::string> &dataset) {
+
+    std::vector<std::string> words;
+
+    for (const auto &data : dataset) {
+        std::vector<std::string> tmp_list = split(data);
+        words.insert(words.end(), tmp_list.begin(), tmp_list.end());
+    }
+
+    std::unordered_map<std::string, int> freqs = computeWordFreqs(words);
+    std::unordered_map<std::string, std::vector<std::string>> freqs_split = initializeSplits(freqs);
+
+    std::unordered_set<std::string> vocab_set;
+
+    for (const auto &freq_split : freqs_split) {
+        std::vector<std::string> str_lst = freq_split.second;
+        for (const auto &str : str_lst) {
+            vocab_set.insert(str);
+        }
+    }
+
+    std::vector<std::string> vocab;
+    vocab.insert(vocab.end(), vocab_set.begin(), vocab_set.end());
+
+    size_t size = 1000000;
+
+    while (vocab.size() < size) {
+
+        std::unordered_map<std::pair<std::string, std::string>, int, PairHash> pair_freqs = computePairFreqs(freqs, freqs_split);
+
+        if (pair_freqs.empty()) {
+            break;
+        }
+
+        std::pair<std::string, std::string> best_pair = findBestPair(pair_freqs);
+        std::string merged_word = mergeBestPair(best_pair);
+        vocab.push_back(merged_word);
+
+        for (auto &freq_split : freqs_split) {
+            std::vector<std::string> &total_str = freq_split.second;
+
+            if (total_str.size() < 2) {
+                continue;
+            }
+
+            for (int i = 0; i <  static_cast<int>(total_str.size()) - 1; ++i) {
+
+                std::string tmp_first = total_str[i];
+                std::string tmp_second = total_str[i + 1];
+
+                if (tmp_first == best_pair.first && tmp_second == best_pair.second) {
+                    total_str[i] = merged_word;
+                    total_str.erase(total_str.begin() + i + 1);
+                }
+
+            }
+        }
+    }
+
+    return vocab;
 }
 
 u_int32_t ByteLevelBPE::getUnicodeCodePoint(const std::string &str, size_t pos, size_t len) {

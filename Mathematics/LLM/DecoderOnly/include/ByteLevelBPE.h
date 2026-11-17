@@ -32,9 +32,10 @@ public:
             const std::unordered_map<std::string, int> &freqs,
             const std::unordered_map<std::string, std::vector<std::string>> &splits);
     static std::pair<std::string, std::string> findBestPair(const std::unordered_map<std::pair<std::string, std::string>, int, PairHash> &pair_freqs);
+    static std::string mergeBestPair(const std::pair<std::string, std::string> &best_pair);
+    static std::vector<std::string> train(const std::vector<std::string> &dataset);
 
 private:
-
 
     static u_int32_t getUnicodeCodePoint(const std::string& str, size_t pos, size_t len);
     static bool isHanzi(uint32_t cp);
